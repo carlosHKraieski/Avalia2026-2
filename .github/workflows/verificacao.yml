@@ -1,4 +1,22 @@
-git add .github/workflows/verificacao.yml
-git commit -m "Adiciona workflow de verificacao"
-git push origin main
+name: Verificação
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Verificar README
+        run: test -f README.md
+
+      - name: Registrar execução
+        run: |
+          echo "Verificação concluída com sucesso."
+          echo "Commit: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
 
