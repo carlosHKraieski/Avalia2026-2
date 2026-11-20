@@ -1,0 +1,4 @@
+git add .github/workflows/verificacao.yml
+git commit -m "Adiciona workflow de verificacao"
+git push origin main
+
