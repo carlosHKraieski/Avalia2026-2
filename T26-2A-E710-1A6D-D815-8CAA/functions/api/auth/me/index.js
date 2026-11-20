@@ -1,0 +1,1 @@
+import {json} from '../../../_shared/http.js';import {sessionUser} from '../../../_shared/auth.js';export async function onRequestGet({request,env}){return json({user:await sessionUser(request,env)})}

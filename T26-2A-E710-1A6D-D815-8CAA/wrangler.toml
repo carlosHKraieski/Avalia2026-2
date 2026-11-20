@@ -1,0 +1,8 @@
+name = "pulseboard"
+compatibility_date = "2026-11-19"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pulseboard-db"
+database_id = "1aaf1a39-b8f5-48ec-9c13-3fa95760d2e2"

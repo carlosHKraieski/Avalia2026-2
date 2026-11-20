@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "projeto-t26-2a-e710-1a6d-d815-8caa",
+  "compatibility_date": "2026-03-01",
+  "pages_build_output_dir": "./public",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pulseboard-db",
+      "database_id": "1aaf1a39-b8f5-48ec-9c13-3fa95760d2e2"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pulseboard</title><link rel="stylesheet" href="./styles.css"></head>
+<body><header class="topbar"><a class="brand" href="/">Pulseboard</a><div id="account"></div></header>
+<main><section class="hero"><div><p class="eyebrow">PAINEL DE PARTICIPAÇÃO</p><h1>Organize ideias que viram ação.</h1><p class="lede">Crie, acompanhe e avance itens com regras verificadas no servidor.</p></div><a class="button primary" href="/api/auth/login">Entrar com Discord</a></section>
+<section id="app" hidden><div class="toolbar"><div><h2>Seu painel</h2><p id="welcome">Carregando…</p></div><button id="new-item" class="button primary">Novo item</button></div><div id="notice" class="notice" role="status"></div><div id="items" class="grid"></div></section>
+<section id="signed-out" class="signed-out"><div class="card"><span class="icon">✦</span><h2>Entre para começar</h2><p>Seu acesso é validado pelo Discord. Cada ação é autorizada e registrada no servidor.</p><a class="button primary" href="/api/auth/login">Continuar com Discord</a></div></section></main>
+<footer class="footer">Chave do projeto: <code>T26-2A-E710-1A6D-D815-8CAA</code></footer>
+<dialog id="item-dialog"><form method="dialog" id="item-form"><button type="button" class="close" id="close-dialog" aria-label="Fechar">×</button><p class="eyebrow">NOVO ITEM</p><h2>Compartilhe uma ideia</h2><label for="title">Título</label><input id="title" name="title" maxlength="120" required><label for="description">Descrição</label><textarea id="description" name="description" maxlength="1000" rows="5" required></textarea><button type="submit" class="button primary">Publicar</button></form></dialog>
+<script src="./app.js" defer></script></body></html>
